@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="eng">
+ <head>
+        <meta charset="UTF-8">
+        <title>About</title>
+
+
+</head>
+
+<body>
+        <nav>
+                <a href="/">Home</a>
+                
+            </nav>
+
+
+
+        <h1>Welcome to the Weather Data API</h1>
+        <p>
+        This API provides access to historical weather data collected from various weather stations.
+         It allows users to retrieve temperature data for specific dates, stations, and years.
+         The API is designed to be simple and easy to use, making it ideal for developers,
+         researchers, and hobbyists interested in weather data analysis.<br>
+         <br>
+
+        <b>Parameters:</b><br>
+        <b>Stationid</b>: The ID of the weather station.<br>
+        <b>Date</b>: The date for which the temperature data is requested (format: YYYYMMDD).<br>
+        <br>
+        <b>Get Data by Date</b>: /api/v1/stationid/date
+        Retrieves the temperature for a specific station on a specific date.
+        <br>
+
+        <b>Get All Data for a Station</b>: /api/v1/stationid
+        Retrieves all available temperature data for a specific station.
+        <br>
+
+        <b>Get Yearly Data for a Station</b>: /api/v1/yearly/stationid/year
+        Retrieves temperature data for a specific station for an entire year.<br>
+        <br>
+
+        <b>Example Usage</b><br>
+        <b>Get Temperature by Date</b>: /api/v1/123456/20000307<br>
+        <b>Get All Data for a Station</b>:  /api/v1/69<br>
+        <b> Get Yearly Data for a Station</b>: /api/v1/yearly/56/2004
+
+
+        </p>
+        <br>
+        
+        <h2>About the Creator</h2>
+        <p>Hi, I am <b>Navid</b>!, a dedicated student currently pursuing my studies in Management at Govt. Edward College, <b>Bangladesh</b>.
+            My learning journey focuses on mastering the basics efficiently, and I'm currently building a strong foundation in Python through
+            the Udemy <b>Python</b> Mega Course while working on hands-on projects to strengthen my programming skills.
+            I am passionate about technology and its applications, and I aspire to specialize in data science and machine learning in the future.
+            My approach emphasizes depth and efficiency, ensuring I fully understand core concepts before moving on to more advanced topics.
+            I am particularly interested in the intersection of management and technology, where I hope to use data-driven insights to solve real-world problems.
+            With a growth mindset and a commitment to continuous learning, I am working toward a future in the dynamic fields of <b>Data Science and Machine Learning</b>.</p>
+        <img src="{{url_for('static', filename='photo.jpg')}}" style="width: 500px;">
+        
+</body>
+
+
+
+</html>
